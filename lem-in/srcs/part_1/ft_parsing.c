@@ -6,7 +6,7 @@
 /*   By: tduverge <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/26 11:33:47 by tduverge     #+#   ##    ##    #+#       */
-/*   Updated: 2018/04/28 11:32:07 by tduverge    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/04/28 15:26:00 by tduverge    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,8 +23,8 @@ static int		ft_ants(char *line)
 		i++;
 	if (line[i])
 		return (0);
-	ants = ft_atoi(line);
-	return (ants > 0 ? ants : 0);
+	ants = ft_strlen(line) < 12 ? ft_atol(line, 0) : 0;
+	return (ants > 0 && ants <= MA ? ants : 0);
 }
 
 void			ft_setid(t_list *rooms)
