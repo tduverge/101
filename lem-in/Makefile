@@ -6,14 +6,12 @@
 #    By: tduverge <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2018/04/26 12:37:20 by tduverge     #+#   ##    ##    #+#        #
-#    Updated: 2018/04/28 13:52:24 by tduverge    ###    #+. /#+    ###.fr      #
+#    Updated: 2018/04/28 15:11:00 by tduverge    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
 NAME = lem-in
-
-LIB_RULE = libft
 
 LIBFT = libft/libft.a
 
@@ -41,7 +39,7 @@ SRC =	srcs/part_1/debug.c \
 
 OBJ = $(SRC:.c=.o)
 
-.PHONY: all clean fclean re $(LIB_RULE)
+.PHONY: all clean fclean re
 
 all: $(NAME)
 
