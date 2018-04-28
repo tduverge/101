@@ -6,7 +6,7 @@
 /*   By: tduverge <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/24 22:11:35 by tduverge     #+#   ##    ##    #+#       */
-/*   Updated: 2017/12/16 16:47:17 by tduverge    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/04/28 18:33:58 by tduverge    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,11 +15,5 @@
 
 void	ft_putstr(char const *s)
 {
-	size_t i;
-
-	i = 0;
-	if (!(s))
-		return ;
-	while (s[i])
-		ft_putchar(s[i++]);
+		write(1, s, ft_strlen(s));
 }

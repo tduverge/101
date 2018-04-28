@@ -6,7 +6,7 @@
 /*   By: tduverge <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/02/18 12:18:59 by tduverge     #+#   ##    ##    #+#       */
-/*   Updated: 2018/02/25 21:19:38 by tduverge    ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/04/28 18:21:01 by tduverge    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -65,5 +65,7 @@ int					pf_applyflags_str(char **str, t_flags *flags);
 int					pf_applyflags_x(char **str, t_flags *flags);
 int					pf_applyflags_o(char **str, t_flags *flags);
 char				*pf_unicode(unsigned int i);
+int					ft_noprintf(char **str, const char *format, ...);
+int					ft_printf_fd(int fd, const char *format, ...);
 
 #endif
